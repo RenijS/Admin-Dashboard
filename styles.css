@@ -130,29 +130,29 @@ table {
 
 /*Start*/
 img {
-  width: 1.2rem;
+  width: 1.4rem;
 }
 
 main {
   display: grid;
-  grid-template-columns: 15% 1fr;
+  grid-template-columns: 16% 1fr;
 }
 
 .main {
   display: grid;
-  grid-template-rows: 10% 1fr;
+  grid-template-rows: 12% 1fr;
 }
 
 .header {
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 45% 55%;
 }
 
 .main-container {
   display: grid;
   grid-template-columns: 1fr 20%;
-  background-color: gray;
+  background-color: #e0e0e2;
   gap: 1rem;
 }
 
@@ -170,13 +170,13 @@ main {
 }
 
 .color-bar {
-  background-color: orange;
+  background-color: #fa9f42;
   border-radius: 8px 0px 0px 8px;
 }
 
 .project {
   display: grid;
-  grid-template: auto / 1rem 1fr;
+  grid-template: auto / 0.4rem 1fr;
 }
 
 .info-container {
@@ -184,4 +184,32 @@ main {
   grid-template: auto auto / auto;
   gap: 1rem;
   padding: 1rem 1rem 1rem 0;
+}
+
+.sideBar {
+  background-color: #2b4162;
+  color: white;
+  padding: 1rem 0 0 1rem;
+  line-height: 2rem;
+}
+
+.sideBar .title {
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sideBar .title img {
+  width: 2rem;
+}
+
+.sideBar .options {
+  margin-top: 2rem;
+}
+
+.sideBar p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
