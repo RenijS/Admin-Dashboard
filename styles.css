@@ -173,6 +173,31 @@ main {
   gap: 1rem;
 }
 
+.project > .desc span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: small;
+  color: gray;
+}
+
+.project > .desc p {
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.project .options-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.5rem;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
 .card {
   background-color: white;
   border-radius: 8px;
@@ -288,7 +313,8 @@ button {
   align-items: center;
 }
 
-.profile-container .profile-img {
+.profile-container .profile-img,
+.trending-container .trend-profile img {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -311,4 +337,27 @@ button {
   -webkit-line-clamp: 3; /* number of lines to show */
   line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.trendings {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.trend-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.trend-profile > div > p {
+  font-size: small;
+}
+
+.trend-profile > div > span {
+  color: gray;
+  font-size: smaller;
 }
